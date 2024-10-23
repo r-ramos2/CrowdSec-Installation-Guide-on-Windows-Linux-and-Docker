@@ -1,6 +1,12 @@
 # CrowdSec Installation Guide on Windows, Linux, and Docker
 
-CrowdSec is a powerful, open-source security tool that analyzes logs to detect and prevent suspicious behavior. This guide provides detailed instructions for installing CrowdSec on both Windows and Linux, as well as setting it up in a Docker container.
+## Table of Contents
+1. [Installation on Windows or Linux](#installation-on-windows-or-linux)
+2. [Installation on a Docker Container](#installation-on-a-docker-container)
+3. [Best Practices for Installing CrowdSec](#best-practices-for-installing-crowdsec)
+4. [Resources](#resources)
+
+---
 
 ## Installation on Windows or Linux
 
@@ -18,7 +24,7 @@ Follow the steps below to install and configure CrowdSec on your Windows or Linu
    After installation, return to your CrowdSec account on the website and locate the **Enroll your instance** section. Copy the provided enroll command.
 
 4. **Run Enroll Command**  
-   Open your terminal (without using `sudo`), and enter the copied enroll command to connect your system to CrowdSec.
+   Open your terminal (without using sudo), and enter the copied enroll command to connect your system to CrowdSec.
 
 5. **Accept Enroll Request**  
    Go back to the CrowdSec dashboard and accept the enroll request to link your machine.
@@ -67,7 +73,7 @@ Running CrowdSec in a Docker container provides a lightweight and isolated envir
    Go to [crowdsec.net](https://www.crowdsec.net) and find the **Enroll your CrowdSec Instance!** section. Copy the provided command for Debian/Ubuntu.
 
 6. **Open Docker Terminal**  
-   Open the terminal in Docker and enter the enroll command (without using `sudo`).
+   Open the terminal in Docker and enter the enroll command (without using sudo).
 
 7. **Accept Enroll Request**  
    In the CrowdSec dashboard, accept the enroll request to link your Docker container instance.
@@ -81,14 +87,7 @@ Running CrowdSec in a Docker container provides a lightweight and isolated envir
 
 ---
 
-## Additional Resources
-
-- [CrowdSec Documentation](https://docs.crowdsec.net/docs/intro)
-- [Docker Hub: CrowdSec Image](https://hub.docker.com/r/crowdsecurity/crowdsec)
-
----
-
-### Best Practices for Installing CrowdSec
+## Best Practices for Installing CrowdSec
 
 - **Always Verify Enrollment**: After installing CrowdSec, ensure your instance is properly enrolled and connected to the CrowdSec network to receive updates and community-driven blocklists.
 - **Use Docker for Isolation**: Running CrowdSec in Docker provides an isolated environment, making it easier to manage and maintain without interfering with your host system.
@@ -96,4 +95,7 @@ Running CrowdSec in a Docker container provides a lightweight and isolated envir
 
 ---
 
-Feel free to contribute, suggest improvements, or raise issues through GitHub! This guide provides a baseline configuration, but CrowdSec can be extended with custom parsers, scenarios, and blocklists to suit your specific security needs.
+## Resources
+
+- [CrowdSec Documentation](https://docs.crowdsec.net/docs/intro)
+- [Docker Hub: CrowdSec Image](https://hub.docker.com/r/crowdsecurity/crowdsec)
